@@ -76,14 +76,14 @@
 #grid-section2 .gridboxblue {
 	display: grid;
 	grid-column: 2 / span 2;
-	grid-row: 2 / span 3;
+	grid-row: 2 / span 2;
 	z-index: 1;
 }
 
 #grid-section2 .gridboxred {
 	display: grid;
-	grid-column: 2 / span 2;
-	grid-row: 2 / span 1;
+	grid-column: 1 / span 2;
+	grid-row: 2;
 }
 
 /* end Grid Part 2 */
