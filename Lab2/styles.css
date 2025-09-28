@@ -16,6 +16,7 @@
 #flex-section2 ul {
 	list-style-type: none;
 	display: flex;
+	justify-content: space-around;
 }
 
 #flex-section2 li {
