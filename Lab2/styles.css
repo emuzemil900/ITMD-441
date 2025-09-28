@@ -14,6 +14,7 @@
 /* Flexbox Part 2 */
 
 #flex-section2 ul {
+	list-style-type: none;
 	display: flex;
 }
 
@@ -22,7 +23,7 @@
 }
 
 #flex-section2 .item1 {
-	order: 2;
+	order: 1;
 }
 
 #flex-section2 .item2 {
@@ -30,7 +31,7 @@
 }
 
 #flex-section2 .item3 {
-	order: 1;
+	order: 2;
 }
 
 /* end Flexbox Part 2 */
