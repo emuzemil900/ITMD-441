@@ -6,7 +6,6 @@
 	justify-content: space-around;
 	padding: 0;
 	margin: 0;
-	flex: 1;
 }
 
 /* end Flexbox Part 1 */
@@ -44,11 +43,16 @@
 /* Flexbox Part 3 */
 
 #flex-section3 .box {
-
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-#flex-section3 .tags ul {
-
+#flex-section3 .tags ul {	
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
 }
 
 /* end Flexbox Part 3 */
