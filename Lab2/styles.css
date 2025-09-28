@@ -74,11 +74,15 @@
 /* Grid Part 2 */
 
 #grid-section2 .gridboxblue {
-
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+	z-index: 2;
 }
 
 #grid-section2 .gridboxred {
-
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+	z-index: 1;
 }
 
 /* end Grid Part 2 */
