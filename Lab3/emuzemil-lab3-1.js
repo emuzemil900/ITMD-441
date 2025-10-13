@@ -12,4 +12,5 @@ function minMaxAverage(numbers) {
     console.log(`Total Numbers: ${numbers.length}, Min Value: ${min}, Max Value: ${max}, Average: ${avg.toFixed(2)}`);
 }
 
-minMaxAverage([2, 5, 23, 6, 9, 4, 30, 1]);
+minMaxAverage([2, 5, 23, 6, 9, 4, 30, 1]); // Initial mandatory test
+minMaxAverage([12, 3, 18, 7, 5, 24]); // Additional test
