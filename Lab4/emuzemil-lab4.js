@@ -7,7 +7,7 @@
   
   const heroSubheadline = document.querySelector('.hero p');
     if (heroSubheadline) {
-      heroSubheadline.innerHTML = 'Leverage innovative strategies from Stellar Marketing to make your business <b><i>shine</b></i> and <b><i>succeed</b></i>.';
+      heroSubheadline.innerHTML = 'Leverage innovative strategies from Stellar Marketing to make your business <b><i>shine</i></b> and <b><i>succeed</i></b>.';
     }
 
   const heroSection = document.querySelector('.hero');
