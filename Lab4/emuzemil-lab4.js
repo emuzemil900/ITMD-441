@@ -28,5 +28,28 @@
     const footerBgColor = window.getComputedStyle(footer).backgroundColor;
     navBar.style.backgroundColor = footerBgColor;
   }
+
+  const newSection = document.createElement('section');
+  newSection.style.backgroundColor = '#6495ed';
+  newSection.style.paddingTop = '32px';
+  newSection.style.paddingBottom = '32px';
+  newSection.style.display = 'flex';
+  newSection.style.justifyContent = 'center';
+  newSection.style.alignItems = 'center';
+
+  const newCtaButton = document.createElement('button');
+  newCtaButton.textContent = 'Schedule a Consultation Today';
+  newCtaButton.style.backgroundColor = 'white';
+  newCtaButton.style.color = '#007bff';
+  newCtaButton.style.border = '4px solid #007bff';
+  newCtaButton.style.padding = '12px 24px';
+  newCtaButton.style.fontSize = '1.25rem';
+  newCtaButton.style.borderRadius = '5px';
+  newCtaButton.style.cursor = 'pointer';
+  newCtaButton.style.boxShadow = '0 2px 5px rgba(0,0,0,0.2)';
+
+  newCtaButton.addEventListener('click', () => {
+    alert('Thank You for your interest in Stellar Marketing!');
+  });
   
 })();
