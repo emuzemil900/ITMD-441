@@ -40,8 +40,8 @@
   const newCtaButton = document.createElement('button');
   newCtaButton.textContent = 'Schedule a Consultation Today';
   newCtaButton.style.backgroundColor = 'white';
-  newCtaButton.style.color = '#007bff';
-  newCtaButton.style.border = '4px solid #007bff';
+  newCtaButton.style.color = '#3182ce';
+  newCtaButton.style.border = '4px solid #3182ce';
   newCtaButton.style.padding = '12px 24px';
   newCtaButton.style.fontSize = '1.25rem';
   newCtaButton.style.borderRadius = '5px';
@@ -51,5 +51,44 @@
   newCtaButton.addEventListener('click', () => {
     alert('Thank You for your interest in Stellar Marketing!');
   });
-  
+
+  newSection.appendChild(newCtaButton);
+
+  const heroParent = heroSection ? heroSection.parentNode : null;
+  if (heroParent && heroSection) {
+    heroParent.insertBefore(newSection, heroSection.nextSibling);
+  }
+
+  const serviceIcons = document.querySelectorAll('.services .material-symbols-outlined');
+  serviceIcons.forEach(icon => {
+    icon.style.color = '#6495ed';
+  });
+
+  const digitalMarketingIcon = document.querySelector('.services .icon-box:nth-child(1) .material-symbols-outlined');
+  if (digitalMarketingIcon) {
+    digitalMarketingIcon.textContent = 'ads_click';
+  }
+
+  const solutionsGrid = document.querySelector('.specialized-solutions .grid');
+  if (solutionsGrid) {
+    const styleTag = document.createElement('style');
+    styleTag.textContent = `
+      @media (min-width: 1024px) {
+        .specialized-solutions .grid {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+    `;
+    document.head.appendChild(styleTag);
+  }
+
+  const musiciansImage = document.querySelector('.specialized-solutions .tile:nth-child(3) img');
+  if (musiciansImage) {
+    musiciansImage.src = 'https://picsum.photos/id/453/400/300';
+  }
+
+  const copyrightText = document.querySelector('footer p');
+  if (copyrightText) {
+    copyrightText.textContent = `© 2025 Stellar Marketing Agency. All rights reserved.`;
+  }  
 })();
