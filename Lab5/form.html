@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details Form</title>
+    <link rel="stylesheet" href="form.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body id="formPage">
+    <form id="detailsForm">
+      <div>
+        <h1>Resume Form</h1>
+      </div>
+
+      <div class="form-section">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+          minlength="2"
+          maxlength="50"
+          pattern="[A-Za-z\s]+"
+          title="Please enter a valid name (letters and spaces only)"
+        />
+      </div>
+      <div class="form-section">
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          title="Please enter a valid email address (e.g., user@example.com)"
+        />
+      </div>
+      <div class="form-section">
+        <label for="phone_number">Phone Number:</label>
+        <input
+          type="tel"
+          id="phone_number"
+          name="phone_number"
+          placeholder="Enter your phone number (e.g., 123-456-7890)"
+          required
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          title="Please enter a valid phone number (format: 123-456-7890)"
+        />
+      </div>
+      <div class="form-section">
+        <label for="degree">Degree:</label>
+        <input
+          type="text"
+          id="degree"
+          name="degree"
+          placeholder="Enter your Degree (e.g., Bachelor of Science)"
+          required
+          minlength="2"
+          maxlength="100"
+        />
+      </div>
+      <div class="form-section">
+        <label for="institute">Institution:</label>
+        <input
+          type="text"
+          id="institute"
+          name="institute"
+          placeholder="Enter your University Name"
+          required
+          minlength="2"
+          maxlength="100"
+        />
+      </div>
+      <div class="form-section">
+        <label for="graduation_year">Graduation Year:</label>
+        <input
+          type="number"
+          id="graduation_year"
+          name="graduation_year"
+          placeholder="Enter your Graduation Year (e.g., 2024)"
+          required
+          min="1950"
+          max="2050"
+          step="1"
+          title="Please enter a year between 1950 and 2050"
+        />
+      </div>
+
+      <div class="form-section">
+        <label for="job_title">Job Title:</label>
+        <input
+          type="text"
+          id="job_title"
+          name="job_title"
+          placeholder="Enter your Designation (e.g., Software Engineer)"
+          minlength="2"
+          maxlength="100"
+        />
+      </div>
+
+      <div class="form-section">
+        <label for="company">Company:</label>
+        <input
+          type="text"
+          id="company"
+          name="company"
+          placeholder="Enter your last company (or N/A if no experience)"
+          minlength="2"
+          maxlength="100"
+        />
+      </div>
+      <div class="form-section">
+        <label for="duration"
+          >Employment Period: (ex: Jan 2023 to Jan 2024)</label
+        >
+        <input
+          type="text"
+          id="duration"
+          name="duration"
+          placeholder="Enter your employment period (or N/A)"
+          minlength="2"
+          maxlength="50"
+        />
+      </div>
+      <div class="form-section">
+        <label for="responsibility">Responsibilities:</label>
+        <textarea
+          id="responsibility"
+          name="responsibility"
+          placeholder="Describe your responsibilities (or N/A if no experience)"
+          rows="4"
+          minlength="2"
+          maxlength="500"
+        ></textarea>
+      </div>
+
+      <div class="form-section">
+        <label>Languages You Know:</label>
+        <div class="checkbox-group">
+          <label
+            ><input
+              type="checkbox"
+              id="JavaScript"
+              value="JavaScript"
+              name="languages"
+            />JavaScript</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="TypeScript"
+              value="TypeScript"
+              name="languages"
+            />TypeScript</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="Python"
+              value="Python"
+              name="languages"
+            />Python</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="Java"
+              value="Java"
+              name="languages"
+            />Java</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="Go"
+              value="Go"
+              name="languages"
+            />Go</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="Rust"
+              value="Rust"
+              name="languages"
+            />Rust</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="Csharp"
+              value="C#"
+              name="languages"
+            />C#</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="PHP"
+              value="PHP"
+              name="languages"
+            />PHP</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="Swift"
+              value="Swift"
+              name="languages"
+            />Swift</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="Kotlin"
+              value="Kotlin"
+              name="languages"
+            />Kotlin</label
+          >
+        </div>
+      </div>
+
+      <div class="form-section">
+        <label>Frameworks & Libraries You Know:</label>
+        <div class="check-grp">
+          <label
+            ><input
+              type="checkbox"
+              id="React"
+              value="React"
+              name="frameworks"
+            />React</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="Vue"
+              value="Vue.js"
+              name="frameworks"
+            />Vue.js</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="Angular"
+              value="Angular"
+              name="frameworks"
+            />Angular</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="NextJS"
+              value="Next.js"
+              name="frameworks"
+            />Next.js</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="Svelte"
+              value="Svelte"
+              name="frameworks"
+            />Svelte</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="NodeJS"
+              value="Node.js"
+              name="frameworks"
+            />Node.js</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="Express"
+              value="Express.js"
+              name="frameworks"
+            />Express.js</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="Django"
+              value="Django"
+              name="frameworks"
+            />Django</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="Flask"
+              value="Flask"
+              name="frameworks"
+            />Flask</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="FastAPI"
+              value="FastAPI"
+              name="frameworks"
+            />FastAPI</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="SpringBoot"
+              value="Spring Boot"
+              name="frameworks"
+            />Spring Boot</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="Laravel"
+              value="Laravel"
+              name="frameworks"
+            />Laravel</label
+          >
+        </div>
+      </div>
+
+      <div class="form-section">
+        <label for="version">Preferred Git Platform:</label>
+        <select id="version" name="version" required>
+          <option value="">-- Select a platform --</option>
+          <option value="github">GitHub</option>
+          <option value="BitBucket">Bitbucket</option>
+          <option value="gitlab">GitLab</option>
+        </select>
+      </div>
+
+      <div class="form-section">
+        <label for="Project">Project:</label>
+        <input
+          type="text"
+          id="ProjectName"
+          name="ProjectName"
+          placeholder="Enter your Project Title"
+          required
+          minlength="3"
+          maxlength="100"
+        />
+        <textarea
+          id="ProjectDescription"
+          name="ProjDescription"
+          placeholder="Describe your Project"
+          rows="4"
+          required
+          minlength="10"
+          maxlength="500"
+        ></textarea>
+      </div>
+
+      <div class="form-section">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
