@@ -19,7 +19,7 @@ document.getElementById("manual-submit").addEventListener("click", () => {
     const lng = document.getElementById("lng").value;
 
     if (!lat || !lng) {
-        showError("Latitude and Longitude required.");
+        showError("Latitude and Longitude are mandatory.");
         return;
     }
     fetchData(lat, lng);
