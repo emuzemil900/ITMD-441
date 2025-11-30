@@ -6,7 +6,7 @@ document.getElementById("use-select").addEventListener("click", () => {
     const sel = document.getElementById("location-select");
     const opt = sel.options[sel.selectedIndex];
     if (!opt.value) {
-        showError("Please choose a location first.");
+        showError("Please select a location first.");
         return;
     }
     const lat = opt.dataset.lat;
@@ -70,8 +70,8 @@ function updateCard(card, data) {
         <div class="data-row"><span>Sunset:</span><span>${data.sunset}</span></div>
         <div class="data-row"><span>Dawn:</span><span>${data.dawn}</span></div>
         <div class="data-row"><span>Dusk:</span><span>${data.dusk}</span></div>
-        <div class="data-row"><span>Solar Noon:</span><span>${data.solar_noon}</span></div>
         <div class="data-row"><span>Day Length:</span><span>${data.day_length}</span></div>
+        <div class="data-row"><span>Solar Noon:</span><span>${data.solar_noon}</span></div>
         <div class="data-row"><span>Timezone:</span><span>${data.timezone}</span></div>
     `;
 }
