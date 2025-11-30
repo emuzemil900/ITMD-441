@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 1.5rem 0;
+    background: #1955a5;
+    color: white;
+}
+
+.credit a {
+    color: #ffe97f;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.control-block {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.1);
+}
+
+#dashboard {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.day-card {
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.1);
+}
+
+.placeholder {
+    opacity: 0.5;
+}
+
+.data-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
