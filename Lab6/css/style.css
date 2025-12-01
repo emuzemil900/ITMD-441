@@ -18,7 +18,6 @@ header {
 }
 
 .controls {
-    font-family: 'Orbitron', cursive;
     display: flex;
     justify-content: center;
     gap: 2rem;
