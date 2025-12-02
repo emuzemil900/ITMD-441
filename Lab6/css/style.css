@@ -1,6 +1,6 @@
 body {
     font-family: 'Orbitron', serif;
-    background: #D7BFDC;
+    background: #b2848b;
     margin: 0;
     padding: 0;
     color: #333;
@@ -9,7 +9,7 @@ body {
 header {
     text-align: center;
     padding: 1.5rem 0;
-    background: #6F2DAB;
+    background: #6f2dab;
     color: white;
 }
 
